@@ -1,0 +1,44 @@
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+}
+    .plat1, .plat2, .plat3{
+        text-align: center;
+        padding: 20px;
+        margin:20px;
+        border: rgba(44, 44, 44, 0.09) solid 0.5px;
+        border-radius: 5px;
+        
+    }
+
+    .plat3{
+        grid-column: span 2;
+}
+
+@media (max-width: 728px) {
+  .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+  }
+
+  .plat1, .plat2, .plat3{
+        grid-column: auto;
+  } 
+
+}
+
+.avocado{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.critique{
+    height: 17px;
+    width: auto;
+    padding-left: 10px;
+    border-left: solid #e45401  3px;
+    gap: 10px;
+    margin-bottom:15px;
+}
